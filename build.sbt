@@ -1,4 +1,4 @@
-name := "udemy-scala-beginners"
+ name := "udemy-scala-beginners"
 
 version := "0.1"
 
