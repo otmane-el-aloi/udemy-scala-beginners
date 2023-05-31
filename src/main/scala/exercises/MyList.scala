@@ -143,6 +143,8 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
 
 }
 
+
+
 object ListTest extends App {
   val listOfIntegers: MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val cloneListOfIntegers: MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
@@ -183,3 +185,13 @@ object ListTest extends App {
 
   println(sort(Cons(4, Cons(2, Cons(5, Cons(1, Cons(3, Empty)))))))
 }
+
+// Takeaways
+// Scala offers class-based inheritance
+// * access modifiers: private, protected, default(none = public)
+// * need to pass in constructor arguments to parent class
+// Derived classes can override members or methods
+// Reuse parent fields/methods with super
+// Prevent inheritance with final and sealed
+// abstract claeses vs traits
+// inheriting from a class and multiple traits
